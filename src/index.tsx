@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import Context from './Context';
+import Theme from './Theme';
 import './index.css';
 
 const root = ReactDOM.createRoot(
@@ -7,6 +7,6 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-    <Context />
+    <Theme />
 );
 
