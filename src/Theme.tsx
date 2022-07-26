@@ -6,7 +6,7 @@ import { themeLight, themeDark } from './style/themes/dj'
 
 function Environment() {
 
-    const [isDark, setIsDark] = useState(false)
+    const [isDark, setIsDark] = useState(true)
 
     return (
         <ThemeProvider theme={isDark ? themeDark : themeLight}>

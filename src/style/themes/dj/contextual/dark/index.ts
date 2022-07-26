@@ -1,14 +1,6 @@
-export const theme = {
-    color: {
-        primary400: "#1E7CBB",
-        secondary400: "#1E7CBB",
-        negative400: "#1E7CBB"
-    }
-}
-
 export const themeLight = {
     color: {
-        primary: theme.color.primary400,
+        primary: "#1E7CBB",
         secondary: "#1E7CBB",
         negative: "#1E7CBB"
     }
@@ -21,4 +13,3 @@ export const themeDark = {
         negative: "#8856CB"
     }
 }
-
