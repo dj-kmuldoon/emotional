@@ -12,55 +12,68 @@ function App(_isDark: any) {
 
   const theme = useTheme()
 
-  // function SomeText() {
-  //   const theme = useTheme()
-  //   return <div css={{ color: theme.background }} {...props} />
-  // }
-
   const RectButton = styled.button`
     padding: 32px;
-    background-color: ${theme.color.primary};
+    color: ${theme.color.buttonPrimaryTxtDefault};
+    background-color: ${theme.color.buttonPrimaryBkgDefault};
+    border: none;
     font-size: 24px;
-    border-radius: 4px;
-    font-weight: bold;
+    border-radius: 8px;
+    font-weight: 500;
+    margin: 24px;
     &:hover {
-      color: white;
+      color:  ${theme.color.buttonPrimaryTxtHover};
+      background-color: ${theme.color.buttonPrimaryBkgHover};
+    };
+    &:active {
+      color:  ${theme.color.buttonPrimaryTxtActive};
+      background-color: ${theme.color.buttonPrimaryBkgActive};
     }
+`
+
+  const AppHeader = styled.header`
+    background-color: ${theme.color.paperNeutralBright};
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: ${theme.color.inkNeutralBright};
+`
+
+const AppLink = styled.a`
+   color: ${theme.color.inkSystemDefault};
 `
 
   return (
     <div className="App">
-      <header className="App-header">
+      <AppHeader>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <RectButton>Howdy</RectButton>
 
-
-        <Button 
-        border="none"
-        color="pink"
-        height = "200px"
-        onClick={() => console.log("You clicked on the pink circle!")}
-        radius = "50%"
-        width = "200px"
-        children = "I'm a pink circle!"
-      />
-
+        {/* <Button
+          border="none"
+          color="pink"
+          height="200px"
+          onClick={() => console.log("You clicked on the pink circle!")}
+          radius="50%"
+          width="200px"
+          children="I'm a pink circle!"
+        /> */}
 
 
-
-
-
-        <a
+        <AppLink
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
+        </AppLink>
+      </AppHeader>
     </div>
   );
 }

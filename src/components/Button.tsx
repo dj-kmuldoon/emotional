@@ -22,7 +22,7 @@ const Button: React.FC<Props> = ({
 }) => {
 
     const theme = useTheme()
-    color = theme.color.primary
+    color = theme.color.buttonPrimaryBkgDefault
 
     return (
         <button
