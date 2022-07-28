@@ -1,16 +1,6 @@
 
 import '@emotion/react'
 
-// declare module '@emotion/react' {
-//     export interface Theme {
-//         color : {
-//           primary: string;
-//           secondary: string;
-//           negative: string
-//         };
-//       }
-//   }
-
 declare module '@emotion/react' {
     export interface Theme {
         palette : {
@@ -205,9 +195,6 @@ declare module '@emotion/react' {
             },                                                                                        
         }, 
         color : {
-          primary: string;
-          secondary: string;
-          negative: string;
 
           buttonPrimaryBkgDefault: string;
           buttonPrimaryBkgHover: string;
@@ -217,9 +204,13 @@ declare module '@emotion/react' {
           buttonPrimaryTxtHover: string;
           buttonPrimaryTxtActive: string;
 
-          paperNeutralBright:string;
-          paperNeutralLight:string;
-          paperNeutralMuted:string;
+          paperNeutralBright: string;
+          paperNeutralLight: string;
+          paperNeutralMuted: string;
+
+          separatorNeutralBright: string;
+          separatorNeutralLight: string;
+          separatorNeutralMuted: string;
 
           inkNeutralBright:string;
           inkNeutralLight:string;

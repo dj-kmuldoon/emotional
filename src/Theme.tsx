@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import App from './App';
 import { ThemeProvider } from '@emotion/react'
-import { themeLight, themeDark } from './style/themes/dj'
+import { themeLight, themeDark } from './style/themes/'
 
 function Environment() {
 

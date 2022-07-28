@@ -1,11 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { useTheme } from '@emotion/react'
-import { css } from '@emotion/react'
+import { useTheme, css } from '@emotion/react'
 import styled from '@emotion/styled'
-import Button from './components/Button'
-
+import NavBar from './components/NavBar'
 //https://levelup.gitconnected.com/adding-dark-mode-to-your-react-app-with-emotion-css-in-js-fc5c0f926838
 
 function App(_isDark: any) {
@@ -33,7 +29,7 @@ function App(_isDark: any) {
 
   const AppHeader = styled.header`
     background-color: ${theme.color.paperNeutralBright};
-    min-height: 100vh;
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,6 +44,7 @@ const AppLink = styled.a`
 
   return (
     <div className="App">
+      <NavBar></NavBar>
       <AppHeader>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.

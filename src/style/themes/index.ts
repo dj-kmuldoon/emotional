@@ -1,11 +1,8 @@
-import * as color from "../../js/wsj/tokens.es6"
+import * as color from "../js/mw/tokens.es6"
 
 export const themeLight = {
+    
     color: {
-        primary: color.ColorPalettePrimaryPrimary400,
-        secondary: "#1E7CBB",
-        negative: "#1E7CBB",
-
         buttonPrimaryBkgDefault: color.ColorPalettePrimaryPrimary400,
         buttonPrimaryBkgHover: color.ColorPalettePrimaryPrimary200,
         buttonPrimaryBkgActive: color.ColorPalettePrimaryPrimary600,
@@ -15,8 +12,12 @@ export const themeLight = {
         buttonPrimaryTxtActive: color.ColorPaletteNeutralBWWhite,
 
         paperNeutralBright: color.ColorPaletteNeutralBWWhite,
-        paperNeutralLight: color.ColorPaletteNeutralBWWhite,
-        paperNeutralMuted: color.ColorPaletteNeutralBWWhite,
+        paperNeutralLight: color.ColorPaletteNeutralNeutral015,
+        paperNeutralMuted: color.ColorPaletteNeutralNeutral025,
+
+        separatorNeutralBright: color.ColorPaletteNeutralNeutral025,
+        separatorNeutralLight: color.ColorPaletteNeutralNeutral025,
+        separatorNeutralMuted: color.ColorPaletteNeutralNeutral025,
 
         inkNeutralBright: color.ColorPaletteNeutralBWBlack,
         inkNeutralLight: color.ColorPaletteNeutralBWBlack,
@@ -30,9 +31,6 @@ export const themeLight = {
 
 export const themeDark = {
     color: {
-        primary: color.ColorPalettePositivePositive400,
-        secondary: "#8856CB",
-        negative: "#8856CB",
 
         buttonPrimaryBkgDefault: color.ColorPalettePrimaryPrimary300,
         buttonPrimaryBkgHover: color.ColorPalettePrimaryPrimary100,
@@ -43,16 +41,20 @@ export const themeDark = {
         buttonPrimaryTxtActive: color.ColorPaletteNeutralBWWhite,
         
         paperNeutralBright: color.ColorPaletteNeutralBWBlack,
-        paperNeutralLight: color.ColorPaletteNeutralBWBlack,
-        paperNeutralMuted: color.ColorPaletteNeutralBWBlack,
+        paperNeutralLight: color.ColorPaletteNeutralNeutral900,
+        paperNeutralMuted: color.ColorPaletteNeutralNeutral800,
+
+        separatorNeutralBright: color.ColorPaletteNeutralNeutral600,
+        separatorNeutralLight: color.ColorPaletteNeutralNeutral600,
+        separatorNeutralMuted: color.ColorPaletteNeutralNeutral600,
         
         inkNeutralBright: color.ColorPaletteNeutralBWWhite,
         inkNeutralLight: color.ColorPaletteNeutralBWWhite,
         inkNeutralMuted: color.ColorPaletteNeutralBWWhite,
 
-        inkSystemBright: color.ColorPaletteSystemSystem300,
-        inkSystemLight: color.ColorPaletteSystemSystem300,
-        inkSystemDefault: color.ColorPaletteSystemSystem300,
+        inkSystemBright: color.ColorPaletteSystemSystem400,
+        inkSystemLight: color.ColorPaletteSystemSystem400,
+        inkSystemDefault: color.ColorPaletteSystemSystem400,
 
     }
 }
