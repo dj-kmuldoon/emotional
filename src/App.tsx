@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import NavBar from './components/NavBar'
 //https://levelup.gitconnected.com/adding-dark-mode-to-your-react-app-with-emotion-css-in-js-fc5c0f926838
 
-function App(_isDark: any) {
+function App() {
 
   const theme = useTheme()
 

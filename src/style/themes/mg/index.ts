@@ -1,11 +1,11 @@
-import * as color from "../js/wsj/tokens.es6"
+import * as color from "../../js/mg/tokens.es6"
 
 export const themeLight = {
     
     color: {
-        buttonPrimaryBkgDefault: color.ColorPalettePrimaryPrimary400,
+        buttonPrimaryBkgDefault: color.ColorPalettePrimaryPrimary100,
         buttonPrimaryBkgHover: color.ColorPalettePrimaryPrimary200,
-        buttonPrimaryBkgActive: color.ColorPalettePrimaryPrimary600,
+        buttonPrimaryBkgActive: color.ColorPalettePrimaryPrimary200,
 
         buttonPrimaryTxtDefault: color.ColorPaletteNeutralBWWhite,
         buttonPrimaryTxtHover: color.ColorPaletteNeutralBWWhite,

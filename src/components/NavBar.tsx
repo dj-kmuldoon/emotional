@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import Select from 'react-select';
 import { Options } from "./../constants/options"
 import { useTheme } from '@emotion/react'
+import { Event } from "./../constants/events"
 
 interface Props { }
 
@@ -10,18 +11,31 @@ export const NavBar: React.FC<Props> = (props) => {
 
     const theme = useTheme()
     const [optimization, setOptimization] = useState(Options[0])
+    const [isDarkMode, setIsDarkMode] = React.useState(false);
+
+    const handleMode = (event: React.FormEvent<HTMLInputElement>) => {
+        setIsDarkMode(!isDarkMode);
+        console.log(event)
+    };
+
+    useEffect(() => {
+        dispatchEvent(new CustomEvent(Event.DARK_MODE, { detail: isDarkMode }));
+    }, [isDarkMode]);
+
+    useEffect(() => {
+        dispatchEvent(new CustomEvent(Event.SET_THEME, { detail: optimization }));
+    }, [optimization]);
 
     const onSelect = (event: any) => {
         console.log("DO SOMETHING")
-        // let index = parseInt(event.value)
-        // setOptimization(Options[index])
+        let index = parseInt(event.value)
+        setOptimization(Options[index])
         // let selection = weightedTargets(index)
         // let map = new SwatchMapModel(selection) // need to pass in the full weightedTargets, not just the rows..
         // displaySwatches(map)
     }
 
     const Wrapper = styled.div`
-        /* background-color: #f8f8f8; */
         background-color: ${theme.color.paperNeutralLight};
         border-bottom: 1px solid ${theme.color.separatorNeutralBright};;
         width: 100%;
@@ -87,6 +101,14 @@ export const NavBar: React.FC<Props> = (props) => {
                             options={Options}
                         />
                     </DropdownContainer>
+
+                    <div>
+                        <label>
+                            <input type="checkbox" checked={isDarkMode} onChange={ handleMode } />
+                            Dark Mode
+                        </label>
+                    </div>
+
                 </ContainerLeft>
                 <ContainerCenter></ContainerCenter>
                 <ContainerRight>  </ContainerRight>

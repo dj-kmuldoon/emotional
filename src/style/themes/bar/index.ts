@@ -1,4 +1,4 @@
-import * as color from "../js/wsj/tokens.es6"
+import * as color from "../../js/bar/tokens.es6"
 
 export const themeLight = {
     
