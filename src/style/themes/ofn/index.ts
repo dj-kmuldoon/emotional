@@ -1,4 +1,4 @@
-import * as palette from "../../js/wsj/tokens.es6"
+import * as palette from "../../js/ofn/tokens.es6"
 
 export const themeLight = {
     

@@ -1,11 +1,11 @@
-import * as palette from "../../js/wsj/tokens.es6"
+import * as palette from "../../js/fnl/tokens.es6"
 
 export const themeLight = {
     
     color: {
-        buttonPrimaryBkgDefault: palette.DjColorPrimary400,
+        buttonPrimaryBkgDefault: palette.DjColorPrimary100,
         buttonPrimaryBkgHover: palette.DjColorPrimary200,
-        buttonPrimaryBkgActive: palette.DjColorPrimary600,
+        buttonPrimaryBkgActive: palette.DjColorPrimary400,
 
         buttonPrimaryTxtDefault: palette.DjColorWhite,
         buttonPrimaryTxtHover: palette.DjColorWhite,
@@ -33,9 +33,9 @@ export const themeLight = {
 export const themeDark = {
     color: {
 
-        buttonPrimaryBkgDefault: palette.DjColorPrimary300,
-        buttonPrimaryBkgHover: palette.DjColorPrimary100,
-        buttonPrimaryBkgActive: palette.DjColorPrimary500,
+        buttonPrimaryBkgDefault: palette.DjColorPrimary100,
+        buttonPrimaryBkgHover: palette.DjColorPrimary075,
+        buttonPrimaryBkgActive: palette.DjColorPrimary400,
 
         buttonPrimaryTxtDefault: palette.DjColorWhite,
         buttonPrimaryTxtHover: palette.DjColorWhite,

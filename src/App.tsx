@@ -44,7 +44,7 @@ const AppLink = styled.a`
 
   return (
     <div className="App">
-      <NavBar></NavBar>
+      <NavBar/>
       <AppHeader>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.

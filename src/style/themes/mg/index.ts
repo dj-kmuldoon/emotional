@@ -1,60 +1,61 @@
-import * as color from "../../js/mg/tokens.es6"
+import * as palette from "../../js/mg/tokens.es6"
 
 export const themeLight = {
     
     color: {
-        buttonPrimaryBkgDefault: color.ColorPalettePrimaryPrimary100,
-        buttonPrimaryBkgHover: color.ColorPalettePrimaryPrimary200,
-        buttonPrimaryBkgActive: color.ColorPalettePrimaryPrimary200,
+        buttonPrimaryBkgDefault: palette.DjColorPrimary400,
+        buttonPrimaryBkgHover: palette.DjColorPrimary200,
+        buttonPrimaryBkgActive: palette.DjColorPrimary600,
 
-        buttonPrimaryTxtDefault: color.ColorPaletteNeutralBWWhite,
-        buttonPrimaryTxtHover: color.ColorPaletteNeutralBWWhite,
-        buttonPrimaryTxtActive: color.ColorPaletteNeutralBWWhite,
+        buttonPrimaryTxtDefault: palette.DjColorWhite,
+        buttonPrimaryTxtHover: palette.DjColorWhite,
+        buttonPrimaryTxtActive: palette.DjColorWhite,
 
-        paperNeutralBright: color.ColorPaletteNeutralBWWhite,
-        paperNeutralLight: color.ColorPaletteNeutralNeutral015,
-        paperNeutralMuted: color.ColorPaletteNeutralNeutral025,
+        paperNeutralBright: palette.DjColorWhite,
+        paperNeutralLight: palette.DjColorNeutral015,
+        paperNeutralMuted: palette.DjColorNeutral025,
 
-        separatorNeutralBright: color.ColorPaletteNeutralNeutral025,
-        separatorNeutralLight: color.ColorPaletteNeutralNeutral025,
-        separatorNeutralMuted: color.ColorPaletteNeutralNeutral025,
+        separatorNeutralBright: palette.DjColorNeutral025,
+        separatorNeutralLight: palette.DjColorNeutral025,
+        separatorNeutralMuted: palette.DjColorNeutral025,
 
-        inkNeutralBright: color.ColorPaletteNeutralBWBlack,
-        inkNeutralLight: color.ColorPaletteNeutralBWBlack,
-        inkNeutralMuted: color.ColorPaletteNeutralBWBlack,
+        inkNeutralBright: palette.DjColorBlack,
+        inkNeutralLight: palette.DjColorBlack,
+        inkNeutralMuted: palette.DjColorBlack,
 
-        inkSystemBright: color.ColorPaletteSystemSystem400,
-        inkSystemLight: color.ColorPaletteSystemSystem400,
-        inkSystemDefault: color.ColorPaletteSystemSystem400,
+        inkSystemBright: palette.DjColorSystem400,
+        inkSystemLight: palette.DjColorSystem400,
+        inkSystemDefault: palette.DjColorSystem400,
+
     }
 }
 
 export const themeDark = {
     color: {
 
-        buttonPrimaryBkgDefault: color.ColorPalettePrimaryPrimary300,
-        buttonPrimaryBkgHover: color.ColorPalettePrimaryPrimary100,
-        buttonPrimaryBkgActive: color.ColorPalettePrimaryPrimary500,
+        buttonPrimaryBkgDefault: palette.DjColorPrimary300,
+        buttonPrimaryBkgHover: palette.DjColorPrimary100,
+        buttonPrimaryBkgActive: palette.DjColorPrimary500,
 
-        buttonPrimaryTxtDefault: color.ColorPaletteNeutralBWWhite,
-        buttonPrimaryTxtHover: color.ColorPaletteNeutralBWWhite,
-        buttonPrimaryTxtActive: color.ColorPaletteNeutralBWWhite,
+        buttonPrimaryTxtDefault: palette.DjColorWhite,
+        buttonPrimaryTxtHover: palette.DjColorWhite,
+        buttonPrimaryTxtActive: palette.DjColorWhite,
         
-        paperNeutralBright: color.ColorPaletteNeutralBWBlack,
-        paperNeutralLight: color.ColorPaletteNeutralNeutral900,
-        paperNeutralMuted: color.ColorPaletteNeutralNeutral800,
+        paperNeutralBright: palette.DjColorBlack,
+        paperNeutralLight: palette.DjColorNeutral900,
+        paperNeutralMuted: palette.DjColorNeutral800,
 
-        separatorNeutralBright: color.ColorPaletteNeutralNeutral600,
-        separatorNeutralLight: color.ColorPaletteNeutralNeutral600,
-        separatorNeutralMuted: color.ColorPaletteNeutralNeutral600,
+        separatorNeutralBright: palette.DjColorNeutral600,
+        separatorNeutralLight: palette.DjColorNeutral600,
+        separatorNeutralMuted: palette.DjColorNeutral600,
         
-        inkNeutralBright: color.ColorPaletteNeutralBWWhite,
-        inkNeutralLight: color.ColorPaletteNeutralBWWhite,
-        inkNeutralMuted: color.ColorPaletteNeutralBWWhite,
+        inkNeutralBright: palette.DjColorWhite,
+        inkNeutralLight: palette.DjColorWhite,
+        inkNeutralMuted: palette.DjColorWhite,
 
-        inkSystemBright: color.ColorPaletteSystemSystem400,
-        inkSystemLight: color.ColorPaletteSystemSystem400,
-        inkSystemDefault: color.ColorPaletteSystemSystem400,
+        inkSystemBright: palette.DjColorSystem300,
+        inkSystemLight: palette.DjColorSystem300,
+        inkSystemDefault: palette.DjColorSystem300,
 
     }
 }

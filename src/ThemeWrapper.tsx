@@ -3,11 +3,11 @@ import App from './App';
 import { useState } from 'react';
 import { ThemeProvider } from '@emotion/react'
 import { ThemeManager } from './style/themes/ThemeManager'
-import { Event } from './constants/events'
+import { Event, Brands } from './constants/'
 
 function Environment() {
 
-    const [theme, setTheme] = useState(0)
+    const [theme, setTheme] = useState(Brands.wsj)
     const [mode, setMode] = useState(false)
 
     window.addEventListener(Event.DARK_MODE, ((e: CustomEvent) => {
@@ -17,10 +17,7 @@ function Environment() {
 
     window.addEventListener(Event.SET_THEME, ((e: CustomEvent) => {
         e.preventDefault()
-        console.log("LEMME SEE", e.detail.value)
-        let value = parseInt(e.detail.value)
-        setTheme(value)
-        // setMode(!mode);
+        setTheme(e.detail.value)
     }) as EventListener);
 
     return (

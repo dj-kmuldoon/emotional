@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import Select from 'react-select';
-import { Options } from "./../constants/options"
 import { useTheme } from '@emotion/react'
-import { Event } from "./../constants/events"
+import { Options, Event } from "./../constants"
 
 interface Props { }
 
 export const NavBar: React.FC<Props> = (props) => {
 
     const theme = useTheme()
-    const [optimization, setOptimization] = useState(Options[0])
+    const [brand, setBrand] = useState(Options[0])
     const [isDarkMode, setIsDarkMode] = React.useState(false);
 
     const handleMode = (event: React.FormEvent<HTMLInputElement>) => {
@@ -23,16 +22,12 @@ export const NavBar: React.FC<Props> = (props) => {
     }, [isDarkMode]);
 
     useEffect(() => {
-        dispatchEvent(new CustomEvent(Event.SET_THEME, { detail: optimization }));
-    }, [optimization]);
+        dispatchEvent(new CustomEvent(Event.SET_THEME, { detail: brand }));
+    }, [brand]);
 
     const onSelect = (event: any) => {
-        console.log("DO SOMETHING")
         let index = parseInt(event.value)
-        setOptimization(Options[index])
-        // let selection = weightedTargets(index)
-        // let map = new SwatchMapModel(selection) // need to pass in the full weightedTargets, not just the rows..
-        // displaySwatches(map)
+        setBrand(Options[index])
     }
 
     const Wrapper = styled.div`
@@ -96,7 +91,7 @@ export const NavBar: React.FC<Props> = (props) => {
                 <ContainerLeft>
                     <DropdownContainer>
                         <Select
-                            value={optimization}
+                            value={brand}
                             onChange={onSelect}
                             options={Options}
                         />
